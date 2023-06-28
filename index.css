@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: aliceblue;
+    color: yellow;
     background-color: rgb(10, 8, 8);
     padding: 2rem 4rem;
     
@@ -18,7 +18,7 @@
 
 .nav-links{
     display: flex;
-    gap: 6rem;
+    gap: 0rem;
 }
 
 .nav-links a{
@@ -43,13 +43,19 @@
 display: flex;
 justify-content: space-between;
 width: 80%;
-margin: auto;
 padding-top:12rem;
 color: aliceblue;
+position: relative;
+margin: auto;
+
 }
 .home-1 > img{
-    width: 400px;
-    height: 500px;
+    /* width: 400px;
+    height: 550px; */
+    position: relative;
+    margin: auto;
+    max-width: 20%;
+    display: none;
 }
 
 .home-content{
@@ -58,7 +64,7 @@ color: aliceblue;
 }
 .home-content > h1{
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 .name-style{
@@ -66,8 +72,9 @@ color: aliceblue;
 }
 .home-content > p{
     width: 80%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     line-height: 30px;
+    font-size: 1.5rem;
 }
 .home-content a button{
 background-color: transparent;
@@ -159,3 +166,60 @@ width: 40%;
     font-size: 1rem;
     float: right;
 }
+
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* //automatic sliding of the images */
